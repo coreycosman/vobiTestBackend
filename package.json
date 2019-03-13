@@ -1,0 +1,52 @@
+{
+  "name": "nodepractice4-toDoApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "r": "nodemon server/server.js -e js",
+    "t": "export NODE_ENV=test && nodemon --exec 'mocha test/**/*.test.js'",
+    "d": "nodemon --inspect-brk server/server.js",
+    "dt": "npm run t -- --inspect-brk",
+    "ds": "nodemon inspect server/server.js",
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "fs": "^0.0.1-security",
+    "global": "^4.3.2",
+    "joi": "^14.3.1",
+    "joi-mongodb-objectid": "^0.1.0",
+    "joi-objectid": "^2.0.0",
+    "joigoose": "^4.0.4",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.14",
+    "morgan": "^1.9.1",
+    "node-sass-middleware": "^0.11.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "redux-logger": "^3.0.6",
+    "selenium-standalone": "^6.15.1",
+    "validator": "^10.7.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-spies": "^1.0.0",
+    "mocha": "^5.2.0",
+    "rewire": "^4.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "supertest": "^3.1.0"
+  },
+  "engines": {
+    "node": "11.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

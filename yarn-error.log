@@ -1,0 +1,85 @@
+Arguments: 
+  /Users/coreycosman/.nvm/versions/node/v9.2.0/bin/node /Users/coreycosman/.nvm/versions/node/v9.2.0/bin/yarn r
+
+PATH: 
+  /usr/local/opt/qt@5.5/bin:/Users/coreycosman/.rbenv/shims:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/coreycosman/.nvm/versions/node/v9.2.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/coreycosman/.rvm/bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  9.2.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/coreycosman/mangadou/mangadou-backend/package.json: Unexpected token } in JSON at position 472
+      at JSON.parse (<anonymous>)
+      at /Users/coreycosman/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:1631:59
+      at Generator.next (<anonymous>)
+      at step (/Users/coreycosman/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/coreycosman/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "nodepractice4-toDoApp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "r": "nodemon server/server.js -e js,hbs",
+      "t": "export NODE_ENV=test && nodemon --exec 'mocha test/**/*.test.js'",
+      "d": "nodemon --inspect-brk server/server.js",
+      "dt": "npm run t -- --inspect-brk",
+      "ds": "nodemon inspect server/server.js",
+      "start": "node server/server.js",
+      "client": "npm run start --prefix server/client",
+    },
+    "dependencies": {
+      "axios": "^0.18.0",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.18.3",
+      "concurrently": "^4.0.1",
+      "crypto-js": "^3.1.9-1",
+      "express": "^4.16.3",
+      "fs": "^0.0.1-security",
+      "handlebars": "^4.0.11",
+      "hbs": "^4.0.1",
+      "jsonwebtoken": "^8.3.0",
+      "lodash": "^4.17.11",
+      "moment": "^2.22.2",
+      "mongodb": "^3.1.1",
+      "mongoose": "^5.2.14",
+      "morgan": "^1.9.1",
+      "node-sass-middleware": "^0.11.0",
+      "passport": "^0.4.0",
+      "passport-jwt": "^4.0.0",
+      "passport-local": "^1.0.0",
+      "path": "^0.12.7",
+      "redux-logger": "^3.0.6",
+      "selenium-standalone": "^6.15.1",
+      "socket.io": "^2.1.1",
+      "validator": "^10.7.1"
+    },
+    "devDependencies": {
+      "chai": "^4.1.2",
+      "chai-spies": "^1.0.0",
+      "mocha": "^5.2.0",
+      "rewire": "^4.0.1",
+      "selenium-webdriver": "^4.0.0-alpha.1",
+      "supertest": "^3.1.0"
+    },
+    "engines": {
+      "node": "9.2.0"
+    },
+    "author": "coreycosman <cosman.corey@gmail.com>",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
